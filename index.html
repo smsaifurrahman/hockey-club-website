@@ -1,278 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Tailwind and DaisyUI link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-     <!-- fontAwsome kits -->
-     <script src="https://kit.fontawesome.com/bbd2d8df19.js" crossorigin="anonymous"></script>
-    <!-- tailwind customize color -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'bg-hockey':'#FF4240',
 
-              }
-            }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Tailwind and DaisyUI link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- fontAwsome kits -->
+  <script src="https://kit.fontawesome.com/bbd2d8df19.js" crossorigin="anonymous"></script>
+  <!-- tailwind customize color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bg-hockey': '#FF4240',
+
           }
         }
-      </script>
-    <!-- Manrope fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        .manrope {
-            font-family: 'Manrope', sans-serif;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
-    
-    
-</head>
-<body class="manrope">
-    <!-- Header section -->
-    <header class="container mx-auto px-2 lg:px-32 ">
-        <!-- Nav section -->
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                     
-                      <li class="text-[#FF4240]"><a>Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Pages</a></li>
-                      <li><a>Blog</a></li>
-                      <li><a>Contact</a></li>
+      }
+    }
+  </script>
+  <!-- Manrope fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .manrope {
+      font-family: 'Manrope', sans-serif;
+    }
 
-                    </ul>
-                  </div>
-                  <a class="text-4xl font-extrabold">Hockey<span class="text-red-500">’</span>s</a>
-                
-                
-                  
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 space-x-8">
-                    <li class="text-[#FF4240]"><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Pages</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Contact</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                    <i class="hidden lg:block fa-solid fa-magnifying-glass"></i>
-                   <button class=" ml-5 btn bg-bg-hockey text-white font-bold px-5 lg:px-6">Get Ticket</button>
-                </div>
-              </div>
-        </nav>
-        <!-- Banner section -->
-        <section class="mt-6">
-            <div class="carousel w-full">
-                <!-- First slide -->
-                <div id="slide1" class="carousel-item relative w-full h-[40vh]   lg:h-[80vh] bg-[url(./images/1.png)] bg-cover bg-center rounded-xl ">
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                  <!-- second slide -->
-                  <div id="slide2" class="carousel-item relative w-full h-[40vh]   lg:h-[80vh] bg-[url(./images/2.png)] bg-cover bg-center rounded-xl ">
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                  <!-- third slide -->
-                  <div id="slide3" class="carousel-item relative w-full h-[40vh]   lg:h-[80vh] bg-[url(./images/3.png)] bg-cover bg-center rounded-xl ">
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+
+</head>
+
+<body class="manrope">
+  <!-- Header section -->
+  <header class="container mx-auto px-2 lg:px-32 ">
+    <!-- Nav section -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-              <!-- <div class=" h-[22vh] mt-3 mx-auto w-full lg:w-[450px] bg-black text-white lg:-translate-y-44 lg:translate-x-64 rounded-lg 
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+
+              <li class="text-[#FF4240]"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+
+            </ul>
+          </div>
+          <a class="text-4xl font-extrabold">Hockey<span class="text-red-500">’</span>s</a>
+
+
+
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 space-x-8">
+            <li class="text-[#FF4240]"><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i class="hidden lg:block fa-solid fa-magnifying-glass"></i>
+          <button class=" ml-5 btn bg-bg-hockey text-white font-bold px-5 lg:px-6">Get Ticket</button>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner section -->
+    <section class="mt-6">
+      <div class="carousel w-full">
+        <!-- First slide -->
+        <div id="slide1"
+          class="carousel-item relative w-full h-[40vh]   lg:h-[80vh] bg-[url(./images/1.png)] bg-cover bg-center rounded-xl ">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- second slide -->
+        <div id="slide2"
+          class="carousel-item relative w-full h-[40vh]   lg:h-[80vh] bg-[url(./images/2.png)] bg-cover bg-center rounded-xl ">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- third slide -->
+        <div id="slide3"
+          class="carousel-item relative w-full h-[40vh]   lg:h-[80vh] bg-[url(./images/3.png)] bg-cover bg-center rounded-xl ">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class=" h-[22vh] mt-3 mx-auto w-full lg:w-[450px] bg-black text-white lg:-translate-y-44 lg:translate-x-64 rounded-lg 
               flex flex-col justify-center text-center px-4">
                   <h1 class="text-2xl font-bold mb-1">Meet all the heroes from the field</h1> 
                   <p class="text-sm	">Hockey, a fast-paced and exhilarating sport, captivates fans around the world</p> 
               </div> -->
-              <div class="lg:absolute h-[22vh] mt-3 mx-auto w-full lg:w-[450px] bg-black text-white lg:-translate-y-48 lg:right-52 rounded-lg 
+      <div class="lg:absolute h-[22vh] mt-3 mx-auto w-full lg:w-[450px] bg-black text-white lg:-translate-y-48 lg:right-52 rounded-lg 
               flex flex-col justify-center text-center px-4">
-                  <h1 class="text-2xl font-bold mb-1">Meet all the heroes from the field</h1> 
-                  <p class="text-sm	">Hockey, a fast-paced and exhilarating sport, captivates fans around the world</p> 
-              </div>
-        </section>
-    </header>
-    <!-- Main section -->
-    <main class="container mx-auto px-2 lg:px-32 my-10 lg:my-14">
-        <!-- profession section  -->
-        <div class="border border-dashed border-gray-300"></div>
-            
-        <div class="mt-8 lg:mt-10 text-center space-y-3">
-            <h2 class="text-3xl font-extrabold">
-                Professional Hockeys Club
-            </h2>
-            <p class="text-sm w-80 lg:w-96 items-center mx-auto	">Hockey, a fast-paced and exhilarating sport, captivates fans around the world
-                Played on a rectangular rink.
-            </p>
+        <h1 class="text-2xl font-bold mb-1">Meet all the heroes from the field</h1>
+        <p class="text-sm	">Hockey, a fast-paced and exhilarating sport, captivates fans around the world</p>
+      </div>
+    </section>
+  </header>
+  <!-- Main section -->
+  <main class="container mx-auto px-2 lg:px-32 my-10 lg:my-14">
+    <!-- profession section  -->
+    <div class="border border-dashed border-gray-300"></div>
+
+    <div class="mt-8 lg:mt-10 text-center space-y-3">
+      <h2 class="text-3xl font-extrabold">
+        Professional Hockeys Club
+      </h2>
+      <p class="text-sm w-80 lg:w-96 items-center mx-auto	">Hockey, a fast-paced and exhilarating sport, captivates fans
+        around the world
+        Played on a rectangular rink.
+      </p>
+    </div>
+
+
+
+    <!-- Radial progress bar -->
+    <section class="my-10">
+      <div class="border border-dashed border-gray-300"></div>
+      <div class=" flex flex-col lg:flex-row">
+        <div class="card  bg-base-100 ">
+          <figure class="px-10 pt-10">
+            <div class="radial-progress text-primary text-red-500" style="--value:70;" role="progressbar"><span
+                class="text-black font-bold">70%</span></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-xl font-semibold">Prayer Facility</h2>
+            <p class="text-base">Hockey is a thrilling and dynamic sport that has captured </p>
+
+          </div>
         </div>
+        <div class="card  bg-base-100 ">
+          <figure class="px-10 pt-10">
+            <div class="radial-progress text-primary" style="--value:80;" role="progressbar"><span
+                class="text-black font-bold">80%</span></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Experienced Coach</h2>
+            <p class="text-base">Hockey is a thrilling and dynamic sport that has captured </p>
 
-        
+          </div>
+        </div>
+        <div class="card  bg-base-100 ">
+          <figure class="px-10 pt-10">
+            <div class="radial-progress text-primary text-orange-800" style="--value:85;" role="progressbar"><span
+                class="text-black font-bold">85%</span></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Senior Player</h2>
+            <p class="text-base">Hockey is a thrilling and dynamic sport that has captured </p>
 
-        <!-- Radial progress bar -->
-        <section class="my-10">
-            <div class="border border-dashed border-gray-300"></div>
-            <div class=" flex flex-col lg:flex-row">
-                <div class="card  bg-base-100 ">
-                    <figure class="px-10 pt-10">
-                        <div class="radial-progress text-primary text-red-500" style="--value:70;" role="progressbar"><span class="text-black font-bold">70%</span></div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title text-xl font-semibold">Prayer Facility</h2>
-                      <p class="text-base">Hockey is a thrilling and dynamic sport that has captured </p>
-                     
-                    </div>
-                  </div>
-                  <div class="card  bg-base-100 ">
-                    <figure class="px-10 pt-10">
-                        <div class="radial-progress text-primary" style="--value:80;" role="progressbar"><span class="text-black font-bold">80%</span></div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Experienced Coach</h2>
-                      <p class="text-base">Hockey is a thrilling and dynamic sport that has captured </p>
-                     
-                    </div>
-                  </div>
-                  <div class="card  bg-base-100 ">
-                    <figure class="px-10 pt-10">
-                        <div class="radial-progress text-primary text-orange-800" style="--value:85;" role="progressbar"><span class="text-black font-bold">85%</span></div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Senior Player</h2>
-                      <p class="text-base">Hockey is a thrilling and dynamic sport that has captured </p>
-                     
-                    </div>
-                  </div>
-                  <div class="card  bg-base-100 ">
-                    <figure class="px-10 pt-10">
-                        <div class="radial-progress text-primary text-green-800" style="--value:90;" role="progressbar"><span class="text-black font-bold">90%</span></div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Training Ground</h2>
-                      <p class="text-base">Hockey is a thrilling and dynamic sport that has captured </p>
+          </div>
+        </div>
+        <div class="card  bg-base-100 ">
+          <figure class="px-10 pt-10">
+            <div class="radial-progress text-primary text-green-800" style="--value:90;" role="progressbar"><span
+                class="text-black font-bold">90%</span></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Training Ground</h2>
+            <p class="text-base">Hockey is a thrilling and dynamic sport that has captured </p>
 
-                    </div>
-                  </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Program section -->
+    <div class="border border-dashed border-gray-300"></div>
+
+    <div class="mt-8 lg:mt-10 text-center space-y-3">
+      <h2 class="text-3xl font-extrabold">
+        Program Sections
+      </h2>
+      <p class="text-sm w-80 lg:w-96 items-center mx-auto	">Hockey, a fast-paced and exhilarating sport, captivates fans
+        around the world
+        Played on a rectangular rink.
+      </p>
+    </div>
+
+    <!-- progarm image grid -->
+    <section class="mt-12">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="relative">
+          <img class="w-full h-64 lg:h-auto" src="./Images/2.png" alt="">
+          <div class="absolute text-white w-96 space-y-3 -translate-y-44 translate-x-8">
+            <h1 class="text-2xl font-bold mb-1">Junior Program</h1>
+            <p class="text-sm">A junior program in hockey refers to the development pathway designed to nurture young
+              talents</p>
+            <button class="btn bg-bg-hockey text-white font-bold px-5 lg:px-6 border-none">Register Now</button>
+          </div>
+        </div>
+        <div class="relative">
+          <img class="w-full h-64 lg:h-auto" src="./Images/3.png" alt="">
+          <div class="absolute text-white w-96 space-y-3 -translate-y-44 translate-x-8">
+            <h1 class="text-2xl font-bold mb-1">Teenager Program</h1>
+            <p class="text-sm">A junior program in hockey refers to the development pathway designed to nurture young
+              talents</p>
+            <button class="btn bg-bg-hockey text-white font-bold px-5 lg:px-6 border-none">Register Now</button>
+          </div>
+        </div>
+        <div class="relative col-span-1 lg:col-span-2">
+          <img class="w-full h-64 lg:h-auto" src="./Images/4.png" alt="">
+          <div class="absolute text-white w-96 space-y-3 -translate-y-44 translate-x-8">
+            <h1 class="text-2xl font-bold mb-1">Professional Program</h1>
+            <p class="text-sm">A junior program in hockey refers to the development pathway designed to nurture young
+              talents</p>
+            <button class="btn bg-bg-hockey text-white font-bold px-5 lg:px-6 border-none">Register Now</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- New Products -->
+    <section class="mt-12">
+      <div class="border border-dashed border-gray-300"></div>
+
+      <div class="mt-8 lg:mt-10 text-center space-y-3">
+        <h2 class="text-3xl font-extrabold">
+          Our New Products </h2>
+        <p class="text-sm w-80 lg:w-96 items-center mx-auto	">Hockey, a fast-paced and exhilarating sport, captivates
+          fans around the world
+          Played on a rectangular rink.
+        </p>
+      </div>
+
+      <!-- New products card -->
+
+      <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-3">
+        <!-- first card -->
+        <div class="hero-content flex-col lg:flex-row border-2 border-solid border-gray-100 rounded-xl">
+          <img src="./Images/5.png" class=" lg:max-w-sm lg:w-auto w-full h-[200px] lg:h-auto rounded-lg " />
+          <div class="space-y-2">
+            <div class="flex space-x-3 items-center">
+              <div class="flex items-center  space-x-1">
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-heart"></i>
+                <p>200</p>
+              </div>
+
             </div>
-        </section>
-        <!-- Program section -->
-        <div class="border border-dashed border-gray-300"></div>
-            
-            <div class="mt-8 lg:mt-10 text-center space-y-3">
-                <h2 class="text-3xl font-extrabold">
-                    Program Sections
-                </h2>
-                <p class="text-sm w-80 lg:w-96 items-center mx-auto	">Hockey, a fast-paced and exhilarating sport, captivates fans around the world
-                    Played on a rectangular rink.
-                </p>
+            <h3 class="text-xl font-bold">World Cup Flags Football</h3>
+            <p class="py-1 text-base">"Uniting nations, the world's heart beats in every stitch..</p>
+            <div class="flex space-x-3">
+              <h4 class="text-[#FF4240] font-extrabold">Price-$22.00</h4>
+              <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="text-base">Delivery Fee : Free</p>
+              </div>
             </div>
 
-            <!-- progarm image grid -->
-        <section  class="mt-10">
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                <div class="relative">
-                  <img class="w-full h-64 lg:h-auto" src="./Images/2.png" alt="">
-                  <div class="absolute text-white w-96 space-y-3 -translate-y-44 translate-x-8">
-                    <h1 class="text-2xl font-bold mb-1">Junior Program</h1>
-                    <p class="text-sm">A junior program in hockey refers to the development pathway designed to nurture young talents</p>
-                    <button class="btn bg-bg-hockey text-white font-bold px-5 lg:px-6 border-none">Register Now</button>
+          </div>
+        </div>
+        <!-- second card -->
+        <div class="hero-content flex-col lg:flex-row border-2 border-solid border-gray-100 rounded-xl">
+          <img src="./Images/6.png" class=" lg:max-w-sm lg:w-auto w-full h-[200px] lg:h-auto rounded-lg " />
+          <div class="space-y-2">
+            <div class="flex space-x-3 items-center">
+              <div class="flex items-center  space-x-1">
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-heart"></i>
+                <p>200</p>
+              </div>
+
+            </div>
+            <h3 class="text-xl font-bold">World Cup Flags Football</h3>
+            <p class="py-1 text-base">"Uniting nations, the world's heart beats in every stitch..</p>
+            <div class="flex space-x-3">
+              <h4 class="text-[#FF4240] font-extrabold">Price-$22.00</h4>
+              <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="text-base">Delivery Fee : Free</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- third card -->
+        <div class="hero-content flex-col lg:flex-row border-2 border-solid border-gray-100 rounded-xl">
+          <img src="./Images/7.png" class=" lg:max-w-sm lg:w-auto w-full h-[200px] lg:h-auto rounded-lg " />
+          <div class="space-y-2">
+            <div class="flex space-x-3 items-center">
+              <div class="flex items-center  space-x-1">
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-heart"></i>
+                <p>200</p>
+              </div>
+
+            </div>
+            <h3 class="text-xl font-bold">World Cup Flags Football</h3>
+            <p class="py-1 text-base">"Uniting nations, the world's heart beats in every stitch..</p>
+            <div class="flex space-x-3">
+              <h4 class="text-[#FF4240] font-extrabold">Price-$22.00</h4>
+              <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="text-base">Delivery Fee : Free</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- fouth card -->
+        <div class="hero-content flex-col lg:flex-row border-2 border-solid border-gray-100 rounded-xl">
+          <img src="./Images/8.png" class=" lg:max-w-sm lg:w-auto w-full h-[200px] lg:h-auto rounded-lg " />
+          <div class="space-y-2">
+            <div class="flex space-x-3 items-center">
+              <div class="flex items-center  space-x-1">
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-heart"></i>
+                <p>200</p>
+              </div>
+
+            </div>
+            <h3 class="text-xl font-bold">World Cup Flags Football</h3>
+            <p class="py-1 text-base">"Uniting nations, the world's heart beats in every stitch..</p>
+            <div class="flex space-x-3">
+              <h4 class="text-[#FF4240] font-extrabold">Price-$22.00</h4>
+              <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="text-base">Delivery Fee : Free</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- fifth card -->
+        <div class="hero-content flex-col lg:flex-row border-2 border-solid border-gray-100 rounded-xl">
+          <img src="./Images/9.png" class=" lg:max-w-sm lg:w-auto w-full h-[200px] lg:h-auto rounded-lg " />
+          <div class="space-y-2">
+            <div class="flex space-x-3 items-center">
+              <div class="flex items-center  space-x-1">
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-heart"></i>
+                <p>200</p>
+              </div>
+
+            </div>
+            <h3 class="text-xl font-bold">World Cup Flags Football</h3>
+            <p class="py-1 text-base">"Uniting nations, the world's heart beats in every stitch..</p>
+            <div class="flex space-x-3">
+              <h4 class="text-[#FF4240] font-extrabold">Price-$22.00</h4>
+              <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="text-base">Delivery Fee : Free</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Sixth card -->
+        <div class="hero-content flex-col lg:flex-row border-2 border-solid border-gray-100 rounded-xl">
+          <img src="./Images/10.png" class=" lg:max-w-sm lg:w-auto w-full h-[200px] lg:h-auto rounded-lg " />
+          <div class="space-y-2">
+            <div class="flex space-x-3 items-center">
+              <div class="flex items-center  space-x-1">
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <p>5.0</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-eye"></i>
+                <p>20</p>
+              </div>
+              <div class="flex items-center space-x-1">
+                <i class="fa-regular fa-heart"></i>
+                <p>200</p>
+              </div>
+
+            </div>
+            <h3 class="text-xl font-bold">World Cup Flags Football</h3>
+            <p class="py-1 text-base">"Uniting nations, the world's heart beats in every stitch..</p>
+            <div class="flex space-x-3">
+              <h4 class="text-[#FF4240] font-extrabold">Price-$22.00</h4>
+              <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="text-base">Delivery Fee : Free</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+         
+     
+
+
+
+
+      </div>
+    </section>
+    <!-- FAQ section -->
+    <section class="mt-12">
+      <div class="border border-dashed border-gray-300"></div>
+
+      <div class="mt-8 lg:mt-10 text-center space-y-3">
+        <h2 class="text-3xl font-extrabold">
+          Clients Question</h2>
+        <p class="text-sm w-80 lg:w-96 items-center mx-auto	">Hockey, a fast-paced and exhilarating sport, captivates
+          fans around the world
+          Played on a rectangular rink.
+        </p>
+      </div>
+      <!-- FAQ Container -->
+      <div class="mt-10">
+          <div class="flex gap-5 flex-col lg:flex-row  justify-between border-2 border-solid border-gray-200 p-6 rounded-xl ">
+              <div class="flex-1">
+                  <img src="./Images/11.png" alt="">
+              </div>
+              <div class="flex-1 space-y-3">
+                <div class="collapse collapse-plus border-b border-solid border-gray-200 ">
+                  <input type="radio" name="my-accordion-3" checked="checked" /> 
+                  <div class="collapse-title text-xl font-bold">
+                    Our Equipment
+                  </div>
+                  <div class="collapse-content"> 
+                    <p>Fast-paced and exhilarating sport, captivates
+                      fans around the world</p>
                   </div>
                 </div>
-                <div class="relative">
-                  <img class="w-full h-64 lg:h-auto" src="./Images/3.png" alt="">
-                  <div class="absolute text-white w-96 space-y-3 -translate-y-44 translate-x-8">
-                    <h1 class="text-2xl font-bold mb-1">Teenager Program</h1>
-                    <p class="text-sm">A junior program in hockey refers to the development pathway designed to nurture young talents</p>
-                    <button class="btn bg-bg-hockey text-white font-bold px-5 lg:px-6 border-none">Register Now</button>
+                <div class="collapse collapse-plus border-b border-solid border-gray-200 ">
+                  <input type="radio" name="my-accordion-3" /> 
+                  <div class="collapse-title text-xl font-bold">
+                    Hockey Training
+                  </div>
+                  <div class="collapse-content"> 
+                    <p>hello</p>
                   </div>
                 </div>
-                <div class="relative col-span-1 lg:col-span-2">
-                  <img class="w-full h-64 lg:h-auto" src="./Images/4.png" alt="">
-                  <div class="absolute text-white w-96 space-y-3 -translate-y-44 translate-x-8">
-                    <h1 class="text-2xl font-bold mb-1">Professional Program</h1>
-                    <p class="text-sm">A junior program in hockey refers to the development pathway designed to nurture young talents</p>
-                    <button class="btn bg-bg-hockey text-white font-bold px-5 lg:px-6 border-none">Register Now</button>
+                <div class="collapse collapse-plus border-b border-solid border-gray-200">
+                  <input type="radio" name="my-accordion-3" /> 
+                  <div class="collapse-title text-xl font-bold">
+                    Private Lessons                  </div>
+                  <div class="collapse-content"> 
+                    <p>hello</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-plus border-b border-solid border-gray-200">
+                  <input type="radio" name="my-accordion-3" checked="checked" /> 
+                  <div class="collapse-title text-xl font-bold">
+                    Ski Touring                  </div>
+                  <div class="collapse-content"> 
+                    <p>hello</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-plus border-b border-solid border-gray-200">
+                  <input type="radio" name="my-accordion-3" /> 
+                  <div class="collapse-title text-xl font-bold">
+                    Booking                  </div>
+                  <div class="collapse-content"> 
+                    <p>hello</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-plus border-b border-solid border-gray-200">
+                  <input type="radio" name="my-accordion-3" /> 
+                  <div class="collapse-title text-xl font-bold">
+                    Pricings                  </div>
+                  <div class="collapse-content"> 
+                    <p>hello</p>
                   </div>
                 </div>
               </div>
-              
-        </section>
-        <!-- New Products -->
-        <section class="mt-10">
-            <div class="border border-dashed border-gray-300"></div>
-            
-            <div class="mt-8 lg:mt-10 text-center space-y-3">
-                <h2 class="text-3xl font-extrabold">
-                    Our New Products                </h2>
-                <p class="text-sm w-80 lg:w-96 items-center mx-auto	">Hockey, a fast-paced and exhilarating sport, captivates fans around the world
-                    Played on a rectangular rink.
-                </p>
-            </div>
+          </div>
+      </div>
+    </section>
 
-            <!-- New products card -->
-            
-            <div class="mt-10">
-                <!-- first card -->
-                <div class="hero min-h-screen bg-base-200">
-                    <div class="hero-content flex-col lg:flex-row">
-                      <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-                      <div>
-                         <div class="flex space-x-1 items-center">
-                            <div>
-                                <i class="fa-solid fa-star"></i>
-                                <p>5.0</p>
-                            </div>
-                            <div>
-                                <i class="fa-regular fa-eye"></i>
-                                <p>20</p>
-                            </div>
-                            <div>
-                                <i class="fa-regular fa-heart"></i>
-                               <p>200</p>
-                            </div>
-                            
-                            
-                         </div>
-                        <h1 class="text-5xl font-bold">Box Office News!</h1>
-                        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button class="btn btn-primary">Get Started</button>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </section>
 
-       
 
-        
-    </main>
-    <footer>
 
-    </footer>
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
